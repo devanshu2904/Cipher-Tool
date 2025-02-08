@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+    background-color: #f7f9fc;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 75px;
+    color: #2A7BBE;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.section {
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Divider Styling */
+.divider {
+    width: 100%;
+    border: none;
+    border-top: 1px solid #e3e8ec;
+    margin: 5px 0;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 100%;
+    margin: 5px 0;
+}
+
+.input-container label {
+    margin-bottom: 2px;
+    color: #2A7BBE;
+    font-weight: 500;
+}
+
+.input-container input {
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 8px;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Row Styling for Options */
+.row {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 10px;
+    gap:20px;
+}
+
+.row div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+    margin-left:10px;
+}
+
+#heading-container {
+    margin-top: 80px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 8px;
+    font-style: italic;
+    width: 100%;
+}
+
+#main-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+.box {
+    background-color: #fff;
+    width: 375px;
+    height: 400px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.box .heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 100%;
+    border-bottom: 1px solid #e3e8ec;
+    font-weight: 600;
+    color: #2A7BBE;
+}
+
+.box h2 {
+    color: #2A7BBE;
+}
+
+.box #controls {
+    width: 100%;
+    height: 100%;
+}
+
+.box #controls .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="radio"]:checked + label {
+    color: #2A7BBE;
+}
+
+#shift-input,
+#keyword-input {
+    align-self: center;
+    text-align: left;
+    width: 90%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+    padding: 5px;
+    background-color: #fff;
+    color: #333;
+}
+
+.box textarea {
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    font-size: 14px;
+    box-sizing: border-box;
+    resize: none;
+    border: none;
+    outline: none;
+    background-color: #f2f4f6;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 8px;
+}
+
+#submit {
+    cursor: pointer;
+    outline: 0;
+    display: inline-block;
+    font-weight: 500;
+    margin: 15px 0px 20px 0px;
+    line-height: 1.5;
+    text-align: center;
+    background-color: #2A7BBE;
+    border: 1px solid #2A7BBE;
+    color: #fff;
+    padding: 8px 24px;
+    font-size: 1rem;
+    border-radius: 25px;
+    transition: all 0.3s ease-in-out;
+}
+
+#submit:hover {
+    background-color: #1E6395;
+    border-color: #1E6395;
+}
+
+#submit:active {
+    background-color: #2A7BBE;
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+#download-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#download-link {
+    display: none;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+#download-link:hover {
+    background-color: #45a049;
+}

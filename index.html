@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cipher Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="heading-container">
+            <h1>CIPHER TOOL</h1>
+        </div>
+
+        <div id="main-container">
+            <div class="box">
+                <div class="heading">
+                    <h2>Choose Cipher & Options</h2>
+                    
+                </div>
+                <div id="controls">
+                    <!-- Cipher Selection -->
+                    <div class="section">
+                        <div class="row">
+                            <div>
+                                <input type="radio" id="caesar" name="cipher" value="caesar" checked>
+                                <label for="caesar">Caesar Cipher</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="vigenere" name="cipher" value="vigenere">
+                                <label for="vigenere">Vigenère Cipher</label>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="divider">
+
+                    <!-- Shift/Keyword Input -->
+                    <div class="section">
+                        <div id="caesar-controls" class="input-container">
+                            <label for="shift-input">Shift:</label>
+                            <input id="shift-input" type="number" placeholder="Enter shift value">
+                        </div>
+                        <div id="vigenere-controls" class="input-container" style="display: none;">
+                            <label for="keyword-input">Keyword:</label>
+                            <input id="keyword-input" type="text" placeholder="Enter keyword">
+                        </div>
+                    </div>
+                    <hr class="divider">
+
+                    <!-- Encode/Decode Options -->
+                    <div class="section">
+                        <div class="row">
+                            <div>
+                                <input type="radio" id="encode" name="mode" value="encode" checked>
+                                <label for="encode">Encode</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="decode" name="mode" value="decode">
+                                <label for="decode">Decode</label>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="divider">
+
+                    <!-- File Upload -->
+                    <div class="section">
+                        <label for="file-input">Select File:</label>
+                        <input type="file" id="file-input" accept=".txt">
+                    </div>
+                </div>
+                <button id="submit">Submit</button>
+            </div>
+            <!-- Second Container: Input Text Area -->
+            <div class="box">
+                <div class="heading">
+                    <h2>Text Input</h2>
+                </div>
+                <div id="controls">
+                    <textarea id="text-input" placeholder="Enter text here"></textarea>
+                </div>
+            </div>
+
+            <!-- Third Container: Output -->
+            <div class="box">
+                <div class="heading">
+                    <h2>Result</h2>
+                </div>
+                <textarea id="output" readonly placeholder="Result"></textarea>
+            </div>
+        </div>
+        <div id="download-container">
+            <a id="download-link" style="display: none;" download="processed_file.txt">Download Processed File</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
